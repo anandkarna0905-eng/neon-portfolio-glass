@@ -1,26 +1,13 @@
-import Navigation from "@/components/Navigation";
-import HeroSection from "@/components/HeroSection";
-import AboutSection from "@/components/AboutSection";
-import ProjectsSection from "@/components/ProjectsSection";
-import BlogSection from "@/components/BlogSection";
-import ResumeSection from "@/components/ResumeSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
+import { useEffect } from "react";
 
 const Index = () => {
+  useEffect(() => {
+    window.location.href = "/portfolio/index.html";
+  }, []);
+
   return (
-    <div className="min-h-screen bg-background">
-      {/* SEO Meta Tags are handled in index.html */}
-      <Navigation />
-      <main>
-        <HeroSection />
-        <AboutSection />
-        <ProjectsSection />
-        <BlogSection />
-        <ResumeSection />
-        <ContactSection />
-      </main>
-      <Footer />
+    <div className="min-h-screen bg-background flex items-center justify-center">
+      <p className="text-foreground">Redirecting to portfolio...</p>
     </div>
   );
 };
